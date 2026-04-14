@@ -1,0 +1,25 @@
+/**
+ * Application Constants
+ */
+export const CONSTANTS = {
+  // Timeouts (ms)
+  API_TIMEOUT: 30000,
+  WORKFLOW_TIMEOUT: 300000,
+  
+  // Retry Configuration
+  MAX_RETRIES: 3,
+  RETRY_BACKOFF_MS: 1000,
+  
+  // Confidence Thresholds
+  MIN_CONFIDENCE_FOR_ACTION: 70,
+  HIGH_CONFIDENCE_THRESHOLD: 80,
+  
+  // Batch Sizes
+  JIRA_ISSUE_BATCH_SIZE: 50,
+  TEST_CASE_BATCH_SIZE: 100,
+  
+  // Default Values
+  DEFAULT_AUTOMATION_FRAMEWORK: 'PLAYWRIGHT',
+  DEFAULT_AUTOMATION_LANGUAGE: 'JAVASCRIPT',
+  DEFAULT_REPORT_FORMAT: 'HTML',
+};

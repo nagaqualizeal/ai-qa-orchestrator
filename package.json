@@ -1,0 +1,52 @@
+{
+  "name": "ai-qa-orchestrator",
+  "version": "1.0.0",
+  "description": "AI-powered QA Orchestrator using Claude and LLMs for intelligent test generation and automation",
+  "main": "dist/scripts/runOrchestrator.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node scripts/runOrchestrator.ts",
+    "dev": "ts-node scripts/runOrchestrator.ts",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "eslint src --ext .ts --fix",
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "qa",
+    "testing",
+    "automation",
+    "ai",
+    "claude",
+    "llm",
+    "orchestration",
+    "jira",
+    "ci-cd"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.87.0",
+    "axios": "^1.15.0",
+    "dotenv": "^16.6.1",
+    "open": "^11.0.0",
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "@types/node": "^20.0.0",
+    "@types/readline-sync": "^1.4.8",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.40.0",
+    "jest": "^29.5.0",
+    "ts-jest": "^29.1.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
